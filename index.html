@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Carrito</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/structure.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,27 +20,28 @@
                 <ul>
                     <li class="submenu">
                             <img src="img/cart.png" id="img-carrito">
-                            <div id="carrito">
+                            <div id="cart">
                                     
-                                    <table id="lista-carrito" class="u-full-width">
+                                    <table id="list-cart" class="u-full-width">
                                         <thead>
                                             <tr>
-                                                <th>Imagen</th>
-                                                <th>Nombre</th>
-                                                <th>Precio</th>
-                                                <th>Cantidad</th>
+                                                <th>Image</th>
+                                                <th>Name</th>
+                                                <th>Price</th>
+                                                <th>Quantity</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tbody></tbody>
                                     </table>
 
-                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                    <a href="#" id="empty-cart" class="button u-full-width">Deselect All Items
+                                    </a>
                             </div>
                     </li>
                 </ul>
             </div>
-        </div> 
+        </div> s
     </div>
     </header>
 
@@ -50,10 +51,10 @@
             <div class="row">
                     <div class="six columns">
                         <div class="contenido-hero">
-                                <h2>Juega a otro nivel</h2>
-                                <p>Todos los juegos a $15</p>
+                                <h2>Plays the best games</h2>
+                                <p>All games with discount</p>
                                 <form action="#" id="busqueda" method="post" class="formulario">
-                                    <input class="u-full-width" type="text" placeholder="¿Cual juego quieres?" id="buscador">
+                                    <input class="u-full-width" type="text" placeholder="What game do you want?" id="buscador">
                                     <input type="submit" id="submit-buscador" class="submit-buscador">
                                 </form>
                         </div>
@@ -66,97 +67,55 @@
         <div class="container">
             <div class="row">
                     <div class="four columns icono icono1">
-                        <p>2000 titulos disponibles <br>
-                        juega los juegos más recientes</p>
+                        <p> 2000 titles available <br>
+                        play the latest games</p>
                     </div>
                     <div class="four columns icono icono2">
-                        <p>ps4, ps5, xbox y mas <br>
-                        todas las consolas</p>
+                        <p>PS4, PS5, XBOX and more <br>
+                        All consoles</p>
                     </div>
                     <div class="four columns icono icono3">
-                        <p>Acceso de por vida <br>
-                       Descargalos en tu consola</p>
+                        <p>Lifetime access <br>
+                        download them to your console</p>
                     </div>
             </div>
         </div>
 
     </div>
 
-    <div id="lista-cursos" class="container">
-        <h1 id="encabezado" class="encabezado">Juegos</h1>
+    <div id="list-games" class="container">
+        <h1 id="encabezado" class="encabezado">GAMES</h1>
         <div class="row">
             <div class="four columns">
                 <div class="card">
-                    <img src="img/residentEvil.png" class="imagen-curso u-full-width">
+                    <img src="img/residentEvil.png" class="image-game u-full-width">
                     <div class="info-card">
-                        <h4>HTML5, CSS3, JavaScript para Principiantes</h4>
-                        <p>Juan Pedro</p>
+                        <h4>Resident Evil 8</h4>
                         <img src="img/estrellas.png">
-                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                        <p class="price">$1500  <span class="u-pull-right ">$1000</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="1">Add To Cart</a>
                     </div>
                 </div> <!--.card-->
             </div>
             <div class="four columns">
                     <div class="card">
-                        <img src="img/assasinscreed.png" class="imagen-curso u-full-width">
+                        <img src="img/assasinscreed.png" class="image-game u-full-width">
                         <div class="info-card">
-                            <h4>Curso de Comida Vegetariana</h4>
-                            <p>Juan Pedro</p>
+                            <h4>Assasin's Creed</h4>
                             <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                            <p class="price">$800  <span class="u-pull-right ">$500</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="2">Add To Cart</a>
                         </div>
                     </div>
             </div>
             <div class="four columns">
                     <div class="card">
-                        <img src="img/callofduty.png" class="imagen-curso u-full-width">
+                        <img src="img/callofduty.png" class="image-game u-full-width">
                         <div class="info-card">
-                            <h4>Guitarra para Principiantes</h4>
-                            <p>Juan Pedro</p>
+                            <h4>Call Of Duty</h4>
                             <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-            </div>
-
-        </div> <!--.row-->
-        <div class="row">
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/outsider.png" class="imagen-curso u-full-width">
-                    <div class="info-card">
-                        <h4>Huerto en tu casa</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/estrellas.png">
-                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
-                    </div>
-                </div> <!--.card-->
-            </div>
-            <div class="four columns">
-                    <div class="card">
-                        <img src="img/reddead.png" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Decoración con productos de tu hogar</h4>
-                            <p>Juan Pedro</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
-                        </div>
-                    </div> <!--.card-->
-            </div>
-            <div class="four columns">
-                    <div class="card">
-                        <img src="img/returnal.png" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Diseño Web para Principiantes</h4>
-                            <p>Juan Pedro</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                            <p class="price">$2000  <span class="u-pull-right ">$1560</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="3">Add To Cart</a>
                         </div>
                     </div> <!--.card-->
             </div>
@@ -164,37 +123,69 @@
         <div class="row">
             <div class="four columns">
                 <div class="card">
-                    <img src="img/scarletNexus.png" class="imagen-curso u-full-width">
+                    <img src="img/outsider.png" class="image-game u-full-width">
                     <div class="info-card">
-                        <h4>Comida Mexicana para principiantes</h4>
-                        <p>Juan Pedro</p>
+                        <h4>OutSider</h4>
                         <img src="img/estrellas.png">
-                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                        <p class="price">$2000  <span class="u-pull-right ">$1500</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="4">Add To Cart</a>
                     </div>
                 </div> <!--.card-->
             </div>
             <div class="four columns">
                     <div class="card">
-                        <img src="img/spiderman.png" class="imagen-curso u-full-width">
+                        <img src="img/reddead.png" class="image-game u-full-width">
                         <div class="info-card">
-                            <h4>Estudio Musical en tu casa</h4>
-                            <p>Juan Pedro</p>
+                            <h4>Red Dead Redemtion</h4>
                             <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                            <p class="price">$1800  <span class="u-pull-right ">$1600</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="5">Add To Cart</a>
                         </div>
                     </div> <!--.card-->
             </div>
             <div class="four columns">
                     <div class="card">
-                        <img src="img/reddead.png" class="imagen-curso u-full-width">
+                        <img src="img/returnal.png" class="image-game u-full-width">
                         <div class="info-card">
-                            <h4>Cosecha tus propias frutas y verduras</h4>
-                            <p>Juan Pedro</p>
+                            <h4>Returnal</h4>
                             <img src="img/estrellas.png">
-                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                            <p class="price">$500  <span class="u-pull-right ">$350</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="6">Add To Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/scarletNexus.png" class="image-game u-full-width">
+                    <div class="info-card">
+                        <h4>Scarlet Nexus</h4>
+                        <img src="img/estrellas.png">
+                        <p class="price">$2000 <span class="u-pull-right ">$1400</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="7">Add To Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/spiderman.png" class="image-game u-full-width">
+                        <div class="info-card">
+                            <h4>Spiderman</h4>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$1799  <span class="u-pull-right ">$1500</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="8">Add To Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/reddead.png" class="image-game u-full-width">
+                        <div class="info-card">
+                            <h4>Red dead Redemtion</h4>
+                            <img src="img/estrellas.png">
+                            <p class="price">$1800  <span class="u-pull-right ">$1600</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="9">Add To Cart</a>
                         </div>
                     </div> <!--.card-->
             </div>
