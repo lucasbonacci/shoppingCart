@@ -6,9 +6,15 @@ let articlesCart = []
 
 registerEventListeners()
 function registerEventListeners(){
-listGames.addEventListener('click', addGame)
-cart.addEventListener('click', deleteGame)
-emptyCartBtn.addEventListener('click', emptyCart)
+    listGames.addEventListener('click', addGame)
+    cart.addEventListener('click', deleteGame)
+    emptyCartBtn.addEventListener('click', emptyCart)
+
+    document.addEventListener('DOMContentLoaded', () => {
+        articlesCart = JSON.parse(localStorage.getItem('carrito')) || []
+
+        cartHtml()
+    })
 }
 
 
@@ -67,6 +73,7 @@ function readGamesData(gameSelected){
             articlesCart= [...articlesCart, gameInfo]
         }
     cartHtml()
+
 }
 
 
@@ -88,10 +95,19 @@ function cartHtml(){
 
     conteinerCart.appendChild(row)
     })
+    // add cart localstorage
+    syncupStorage()
 }
+
+
+function syncupStorage(){
+    localStorage.setItem('carrito', JSON.stringify(articlesCart)) 
+}
+
 
 
 // removes the games of tbody
 function cleanHtml(){
     conteinerCart.innerHTML = ""
 }
+
